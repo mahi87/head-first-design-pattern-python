@@ -1,0 +1,1 @@
+from .mallard_duck import MallardDuck
