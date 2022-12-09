@@ -1,6 +1,6 @@
 from .duck import Duck
-from .quack_behavior import Quack, Squeak
-from .fly_behavior import FlyWithWings, FlyNoWay
+from .quackmixins import Quack, Squeak
+from .flymixins import FlyWithWings, FlyNoWay
 
 class MallardDuck(Duck, Quack, FlyWithWings):   
     def display(self):
