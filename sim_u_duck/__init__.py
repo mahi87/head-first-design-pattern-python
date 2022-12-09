@@ -1,1 +1,1 @@
-from .mallard_duck import MallardDuck
+from .mallard_duck import MallardDuck, RubberDuck
