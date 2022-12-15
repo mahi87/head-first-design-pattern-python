@@ -21,3 +21,11 @@ class HouseBlend(Beverage):
         
     def cost(self):
         return 0.89   
+    
+class FilterCoffee(Beverage):
+    def __init__(self):
+        self.description = 'Filter coffee'
+    
+    def cost(self):
+        from starbuzz_coffee.condiment import Milk
+        return 0.60 + Milk(base_drink=None).cost()

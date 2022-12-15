@@ -1,4 +1,4 @@
-from starbuzz_coffee.beverage import Espresso, HouseBlend
+from starbuzz_coffee.beverage import Espresso, HouseBlend, filter_coffee_cost
 from starbuzz_coffee.condiment import Milk, Mocha
 
 coffee1 = Mocha(Milk(Espresso()))
@@ -12,3 +12,6 @@ print(coffee2.cost())
 
 double_mocha = Mocha(Mocha(Espresso()))
 print(double_mocha.description + ' - ' + str(double_mocha.cost()))
+
+
+print(filter_coffee_cost())

@@ -14,4 +14,4 @@ class Milk(Beverage):
         self.description = base_drink.description + ' with Milk'
         
     def cost(self):
-        return self.base_drink.cost() + 0.50
+        return (self.base_drink.cost() + 0.50) if self.base_drink else 0.50
